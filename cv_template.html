@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kinara Hemachandra - CV</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* Left Sidebar */
+  .sidebar {
+    width: 32%;
+    background-color: #182848;
+    color: #ffffff;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .header-name {
+    margin-bottom: 4px;
+  }
+  .name-first, .name-last {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .title-role {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #8da2c0;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  .sidebar-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 12px;
+  }
+  .sidebar-heading {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .sidebar-text {
+    font-size: 10px;
+    line-height: 1.45;
+    color: #d1dced;
+  }
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-list li {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #e2e8f0;
+    position: relative;
+    padding-left: 12px;
+  }
+  .sidebar-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #cbd5e1;
+  }
+
+  .edu-item {
+    margin-bottom: 10px;
+  }
+  .edu-item:last-child {
+    margin-bottom: 0;
+  }
+  .edu-degree {
+    font-weight: 700;
+    font-size: 10.5px;
+    color: #ffffff;
+  }
+  .edu-school {
+    font-size: 9.5px;
+    color: #cbd5e1;
+    margin-top: 1px;
+  }
+  .edu-date {
+    font-size: 9px;
+    color: #94a3b8;
+    margin-top: 1px;
+  }
+
+  .link-item {
+    font-size: 10px;
+    color: #d1dced;
+    line-height: 1.6;
+  }
+  .link-label {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  /* Main Content Column */
+  .main-content {
+    width: 68%;
+    padding: 32px 30px 24px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-heading {
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #182848;
+    border-bottom: 1.5px solid #cbd5e1;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+  }
+  .summary-text {
+    font-size: 9.8px;
+    line-height: 1.45;
+    color: #334155;
+    text-align: justify;
+  }
+
+  .job {
+    margin-bottom: 12px;
+  }
+  .job:last-child {
+    margin-bottom: 0;
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+  }
+  .job-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .job-company {
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .job-meta {
+    font-size: 9.2px;
+    color: #64748b;
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+  .job-bullets {
+    list-style: none;
+    padding-left: 0;
+  }
+  .job-bullets li {
+    position: relative;
+    padding-left: 13px;
+    font-size: 9.3px;
+    line-height: 1.38;
+    color: #334155;
+    margin-bottom: 2px;
+  }
+  .job-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    color: #475569;
+    font-weight: bold;
+  }
+
+  .project-item {
+    font-size: 9.3px;
+    line-height: 1.4;
+    color: #334155;
+    margin-bottom: 5px;
+  }
+  .project-title {
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .project-tech {
+    font-style: italic;
+    color: #64748b;
+  }
+</style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="header-name">
+      <div class="name-first">KINARA</div>
+      <div class="name-last">HEMACHANDRA</div>
+      <div class="title-role">JUNIOR BUSINESS ANALYST</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">CONTACT</div>
+      <div class="sidebar-text">Wijayaba Place, Malabe, Sri Lanka</div>
+      <div class="sidebar-text" style="margin-top: 3px;">+94 77 222 1736</div>
+      <div class="sidebar-text" style="margin-top: 3px; word-break: break-all;">Kinarahemachandra2003@gmail.com</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">SKILLS</div>
+      <ul class="sidebar-list">
+        <li>Data analysis</li>
+        <li>Stakeholder engagement</li>
+        <li>Requirements gathering</li>
+        <li>Customer service</li>
+        <li>Multitasking</li>
+        <li>Report writing</li>
+        <li>Remote collaboration</li>
+        <li>CRM software use</li>
+        <li>Process improvement</li>
+        <li>Technical troubleshooting</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">EDUCATION</div>
+      <div class="edu-item">
+        <div class="edu-degree">BSc (Hons) Software Engineering</div>
+        <div class="edu-school">Sri Lanka Institute of Information Technology</div>
+        <div class="edu-date">Jul 2023 – Present</div>
+      </div>
+      <div class="edu-item" style="margin-top: 8px;">
+        <div class="edu-degree">Physical Science</div>
+        <div class="edu-school">Cambridge International School</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">LANGUAGES</div>
+      <div class="sidebar-text">English — Native</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-heading">LINKS</div>
+      <div class="link-item"><span class="link-label">LinkedIn</span> — kinara-hemachandra</div>
+      <div class="link-item"><span class="link-label">GitHub</span> — kinara2003</div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="section-block">
+      <div class="main-heading">PROFESSIONAL SUMMARY</div>
+      <p class="summary-text">
+        Motivated Software Engineering undergraduate with practical experience in business analysis, requirements gathering, and software documentation. Skilled in analyzing business processes, engaging stakeholders, and translating business needs into clear functional requirements for development teams. Experienced with CRM solutions, system integrations, and the software development lifecycle, backed by strong communication, analytical, and problem-solving skills. Seeking to contribute as a Junior Business Analyst bridging business objectives and technology solutions.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <div class="main-heading">WORK EXPERIENCE</div>
+      
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Business Analyst (Intern) | <span class="job-company">Cloud Syntex</span></span>
+        </div>
+        <div class="job-meta">No. 210, N. J. V. Cooray Mawatha, Rajagiriya &nbsp;|&nbsp; Feb 2026 – September 2026</div>
+        <ul class="job-bullets">
+          <li>Collaborated with clients to gather, analyze, and document business and functional requirements for CRM enhancements and new features.</li>
+          <li>Prepared Business Requirement Documents (BRDs), Software Requirement Specifications (SRS), user guides, and other project documentation.</li>
+          <li>Participated in client meetings, captured meeting minutes, clarified requirements, and translated business needs into actionable tasks for the development team.</li>
+          <li>Worked closely with developers, UI/UX designers, and QA engineers throughout the SDLC to ensure requirements were accurately implemented.</li>
+          <li>Analyzed existing CRM workflows and identified opportunities to improve usability, automation, and business processes.</li>
+          <li>Documented CRM integrations, including HubSpot and Dinero, detailing integration workflows, data synchronization, and user processes.</li>
+          <li>Created process flows, feature descriptions, and functional documentation to support system development and client onboarding.</li>
+          <li>Assisted in backlog management by converting business requirements into clear user stories and acceptance criteria.</li>
+          <li>Validated implemented features against documented requirements and coordinated with stakeholders to resolve requirement-related issues.</li>
+          <li>Contributed to continuous improvement of product documentation, ensuring accuracy, consistency, and alignment with client expectations.</li>
+          <li>Analyzed business processes and gathered requirements to support data-driven decision-making, improving project efficiency and stakeholder alignment.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Virtual Telecommunication Assistant | <span class="job-company">RAR Properties</span></span>
+        </div>
+        <div class="job-meta">Al Moosa Tower 1, Sheikh Zayed Road, Dubai, UAE &nbsp;|&nbsp; Sep 2025 – Nov 2026</div>
+        <ul class="job-bullets">
+          <li>Managed customer communications through phone, email, and digital platforms, addressing inquiries and ensuring professional, timely responses.</li>
+          <li>Maintained and updated customer information, interaction records, and follow-up activities using CRM systems.</li>
+          <li>Coordinated with internal teams and customers to resolve issues, manage requests, and improve overall communication processes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="main-heading">PROJECTS</div>
+      <div class="project-item">
+        <span class="project-title">Wellness Studio Management System</span> <span class="project-tech">(Java, MERN, HTML, CSS)</span> — Collaborated with a real-world client to build a wellness studio system with appointment scheduling, client management, and service tracking.
+      </div>
+      <div class="project-item">
+        <span class="project-title">Finance Tracker</span> <span class="project-tech">(Kotlin, Android Studio)</span> — Finance tracking app to manage income, expenses, and categories, with realtime balance updates and basic financial insights.
+      </div>
+      <div class="project-item">
+        <span class="project-title">Online Job Portal</span> <span class="project-tech">(JavaScript, HTML, CSS)</span> — Portal enabling employers to post vacancies and job seekers to search, apply, and manage applications efficiently.
+      </div>
+      <div class="project-item">
+        <span class="project-title">Clean Water &amp; Sanitation System</span> <span class="project-tech">(HTML, CSS, JavaScript)</span> — System to monitor water resources, track sanitation services, and support community-level reporting.
+      </div>
+      <div class="project-item">
+        <span class="project-title">Online Vehicle Spare Parts Management System</span> <span class="project-tech">(HTML, CSS, JavaScript)</span> — System to manage inventory, process orders, and track customer purchases efficiently.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
